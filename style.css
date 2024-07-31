@@ -4,16 +4,16 @@ author: Yug Patel
 last modified: 29 July 2024
 */
 
-/* Color Pallete from Coolers
-E63946 (red)
-F1FAEE (white)
-A8DADC (sky blue)
-457B9D (light blue)
-1D3557 (medium blue)
-1D3557 (dark navy)
+/* color pallete from coolers
+e63946 (red)
+f1faee (white)
+a8dadc (sky blue)
+457b9d (light blue)
+1d3557 (medium blue)
+1d3557 (dark navy)
  */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,32 +21,33 @@ A8DADC (sky blue)
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'manrope', sans-serif;
 }
 
-:root{
-    --bg-color: #A8DADC;
-    --second-bg-color: #1D3557;
-    --text-color: #1D3557;
-    --main-color: #E63946;
+:root {
+    --bg-color: #a8dadc;
+    --second-bg-color: #1d3557;
+    --text-color: #1d3557;
+    --main-color: #e63946;
 }
 
-html{
+html {
     font-size: 62.5%;
     overflow-x: hidden;
 }
-body{
+
+body {
     background: var(--bg-color);
     color: var(--text-color)
 }
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 3rem 9%;
-    background: rgba(0,0,0, 0.41);
+    background: rgba(0, 0, 0, 0.41);
     backdrop-filter: blur(40px);
     border-bottom: 1px solid rgba(166, 166, 166, 0);
     display: flex;
@@ -55,7 +56,7 @@ body{
     z-index: 1;
 }
 
-.logo{
+.logo {
     font-size: 3rem;
     color: var(--text-color);
     font-weight: 600;
@@ -63,11 +64,11 @@ body{
     transition: 0.3s ease;
 }
 
-.logo:hover{
+.logo:hover {
     transform: scale(1.1);
 }
 
-.navbar a{
+.navbar a {
     font-size: 1.8rem;
     color: white;
     margin-left: 4rem;
@@ -77,13 +78,48 @@ body{
 }
 
 .navbar a:hover,
-.nabar a.active{
+.nabar a.active {
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
 }
 
-#menu-icon{
+#menu-icon {
     font-size: 3.6rem;
     color: var(text-color);
     display: none;
+}
+
+section {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+span {
+    color: var(--main-color);
+    text-shadow: 0 0 25px var(--main-color);
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+    font-size: 4rem;
+}
+
+.home-content h1 {
+    font-size: 7rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-img {
+    border-radius: 50%;
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.home-img img {
+    position: relative;
+    width: 35vw;
+    border-radius: 50%
 }
